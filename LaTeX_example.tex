@@ -1,19 +1,25 @@
 % Example LaTeX document  - note % sign indicates a comment
-\documentstyle[11pt]{article}
+\documentclass[11pt]{article}
 % Default margins are too wide all the way around.  You can reset them here
 \setlength{\topmargin}{-.5in}
 \setlength{\textheight}{9in}
 \setlength{\oddsidemargin}{.125in}
 \setlength{\textwidth}{6.25in}
 
+\usepackage{graphicx} 
+
 \begin{document}
 \title{LaTeX Typesetting Examples}
-\author{Miaomiao Zhang\\
+\author{Your Name\\
 Manhattan College}
-\renewcommand{\today}{February, 2019}
+\renewcommand{\today}{February 5, 2019}
 \maketitle
 This document provides several examples of using LaTeX formatting commands.
 Compare the typeset output side-by-side with the input document.
+
+\begin{figure}
+\center{\includegraphics[width=0.3\textwidth] {pics/ragdoll-blue-bicolor}} 
+\end{figure}
 
 \section {Plain Text}
 Type your text in free-format; lines can be as long
