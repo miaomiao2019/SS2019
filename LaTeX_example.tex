@@ -6,7 +6,7 @@
 \setlength{\oddsidemargin}{.125in}
 \setlength{\textwidth}{6.25in}
 
-\usepackage{graphicx} 
+\usepackage{graphicx}  % for insert images
 
 \begin{document}
 \title{LaTeX Typesetting Examples}
@@ -17,7 +17,11 @@ Manhattan College}
 This document provides several examples of using LaTeX formatting commands.
 Compare the typeset output side-by-side with the input document.
 
-% An example for including a picture.
+% An example for including a picture. Optional parameters can be used to fine tune the placement of tables and figures, with the following meaning:
+%h, here
+%t, top
+%b, bottom
+%If it happens to violate its typesetting rules. You can force LaTeX to "insist" on these specifications by adding an exclamation mark (!) before the placement parameters, e.g. \begin{figure}[!t].
 \begin{figure}[!h]
 \center{\includegraphics[width=0.3\textwidth] {pics/ragdoll-blue-bicolor}} 
 \end{figure}
